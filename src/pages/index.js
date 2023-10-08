@@ -1,11 +1,8 @@
 import {createBrowserRouter} from "react-router-dom";
-import { lazy } from "react";
-
-// lazy load all the pages
-const HomePage = lazy(() => import("./home/home"))
-const LoginPage = lazy(() => import("./login/login"))
-const SearchPage = lazy(() => import("./search/search"))
-const WatchPage = lazy(() => import("./watch/watch"))
+import HomePage from "./home/home";
+import LoginPage from "./login/login";
+import SearchPage from "./search/search";
+import WatchPage from "./watch/watch";
 
 
 const routes = [

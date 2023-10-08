@@ -1,8 +1,10 @@
 import React from 'react'
+import Layout from '../../components/layout/layout'
+import NavBar from '../../components/navbar/navbar'
 
 const HomePage:React.FC = () => {
   return (
-    <div>HomePage</div>
+    <Layout navBarContent={<NavBar/>} mainContent={<div>Home</div>}/>
   )
 }
 

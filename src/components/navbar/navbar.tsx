@@ -1,8 +1,27 @@
 import React from 'react'
+import {AiOutlineSearch,AiOutlineClose} from "react-icons/ai"
+import {TiMicrophone} from "react-icons/ti"
+import {BsYoutube,BsCamera,BsBell} from "react-icons/bs"
+import {GiHamburgerMenu} from "react-icons/gi"
+import {IoAppsSharp} from "react-icons/io5"
+import { Link, useNavigate } from 'react-router-dom'
 
 const NavBar:React.FC = () => {
+    const navigate = useNavigate() 
   return (
-    <div>NavBar</div>
+    <div className="flex justify-between items-center w-full px-14 h-full bg-[#212121] opacity-95">
+        <div className="flex gap-8 items-center text-2xl ]">
+            <div className=" hover:cursor-pointer">
+                <GiHamburgerMenu/>
+            </div>
+            <Link to="/">
+                <div className="flex gap-1 justify-center items-center" onClick={() => navigate("/")}>
+                    <BsYoutube className='text-3xl text-red-600'/>
+                    <span className='text-xl font-medium'>Youtube</span>
+                </div>
+            </Link>
+        </div>
+    </div>
   )
 }
 

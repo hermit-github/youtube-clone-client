@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/layout/layout'
+import Layout from '../../components/layouts/layout'
 import NavBar from '../../components/navbar/navbar'
 
 const SearchPage:React.FC = () => {

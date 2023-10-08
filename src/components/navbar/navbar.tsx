@@ -9,15 +9,15 @@ import { Link, useNavigate } from 'react-router-dom'
 const NavBar:React.FC = () => {
     const navigate = useNavigate() 
   return (
-    <div className="flex justify-between items-center w-full px-14 h-full bg-[#212121] opacity-95">
+    <div className="flex justify-between items-center w-full px-8 h-full bg-[#212121] opacity-95">
         <div className="flex gap-8 items-center text-2xl ]">
-            <div className=" hover:cursor-pointer">
+            <div className=" hover:cursor-pointer text-white">
                 <GiHamburgerMenu/>
             </div>
             <Link to="/">
                 <div className="flex gap-1 justify-center items-center" onClick={() => navigate("/")}>
                     <BsYoutube className='text-3xl text-red-600'/>
-                    <span className='text-xl font-medium'>Youtube</span>
+                    <span className='text-2xl font-medium text-white'>Youtube</span>
                 </div>
             </Link>
         </div>

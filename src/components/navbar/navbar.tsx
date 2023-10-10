@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
           <span className="text-2xl font-medium text-white">YouTube</span>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-5">
+      <div className="flex items-center justify-center gap-2">
         <form action="">
           <div className="flex bg-zinc-900 items-center h-10 px-4 pr-0">
             <div className="flex gap-4 items-center pr-5">
